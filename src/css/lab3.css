@@ -1,0 +1,44 @@
+body {
+    background-image: url("/home/chudishe/lab/src/img/lab3/bg_body.png");
+    background-size: contain;
+    background-position: center;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+    font-size: 70px;
+    margin-top: 70px;
+}
+
+h2 {
+    color: #101066;
+    margin-top: 30px;
+    background-image: url('/home/chudishe/lab/src/img/lab3/bg_h2.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+p,
+pre {
+    padding-left: 60px;
+    line-height: 1.6;
+}
+
+pre {
+    color: #2929a4;
+}
+
+address {
+    color: blue;
+    text-align: center;
+}
+
+.intro {
+    color: #1b1b9f;
+    padding-left: 0;
+}
