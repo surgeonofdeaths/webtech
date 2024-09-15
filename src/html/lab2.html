@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика продажу автомобілів</title>
+</head>
+
+<body>
+    <h1>Статистика продажу автомобілів</h1>
+    <table border="1">
+        <tr>
+            <th>Марка автомобіля</th>
+            <th>Січень</th>
+            <th>Лютий</th>
+            <th>Березень</th>
+        </tr>
+        <tr>
+            <td>Toyota</td>
+            <td>270 000</td>
+            <td>250 000</td>
+            <td>300 000</td>
+        </tr>
+        <tr>
+            <td>Volkswagen</td>
+            <td>250 000</td>
+            <td>200 000</td>
+            <td>270 000</td>
+        </tr>
+        <tr>
+            <td>Renault-Nissan</td>
+            <td>130 000</td>
+            <td>150 000</td>
+            <td>200 000</td>
+        </tr>
+        <tr>
+            <th>ВСЬОГО:</th>
+            <th>650 000</th>
+            <th>600 000</th>
+            <th>770 000</th>
+        </tr>
+    </table>
+    <h1>Розклад занять</h1>
+    <table border="1">
+        <tr>
+            <th>День тижня</th>
+            <th>Академічні години</th>
+            <th>ШИФР ГРУПИ</th>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>8.00-9.20</td>
+            <td>КН-2.01</td>
+            <td>Веб-технології та веб-дизайн</td>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>9.35-10.55</td>
+            <td>КН-2.02</td>
+            <td>Об'єктно-орієнтоване програмування</td>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>11.10-12.30</td>
+            <td>КН-2.03</td>
+            <td>Теорія алгоритмів</td>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>12.45-14.05</td>
+            <td>КН-2.01</td>
+            <td>Комп'ютерна дискретна математика</td>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>12.45-14.05</td>
+            <td>КН-2.02</td>
+            <td>Теорія алгоритмів</td>
+        </tr>
+        <tr>
+            <td>Понеділок</td>
+            <td>12.45-14.05</td>
+            <td>КН-2.03</td>
+            <td>Об'єктно-орієнтоване програмування</td>
+        </tr>
+    </table>
+    <h1>Форма зворотного зв'язку</h1>
+    <form action="/submit-form" method="post">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Відправити">
+    </form>
+    <form action="report" method="post">
+        <div>
+            <label>Назва помилки:</label><br>
+            <input type="text" name="error-name" required="">
+        </div>
+        <div>
+            <label>Опис:</label><br>
+            <textarea rows="4" required=""></textarea>
+        </div>
+        <div>
+            <label>Операційна система:</label><br>
+            <select name="operating-system" required="">
+                <option value="Windows">Windows</option>
+                <option value="macOS">macOS</option>
+                <option value="Linux">Linux</option>
+            </select>
+        </div>
+        <div>
+            <label>Браузер:</label><br>
+            <input type="radio" value="chrome" required=""> Chrome<br>
+            <input type="radio" value="firefox"> Firefox<br>
+            <input type="radio" value="safari"> Safari
+        </div>
+        <div>
+            <label>Кому призначено:</label><br>
+            <select name="assigned-to" required="">
+                <option value="dev">Команда розробки</option>
+                <option value="test">Команда тестування</option>
+                <option value="manag">Менеджер проекту</option>
+            </select>
+        </div>
+        <div>
+            <label>Приорітет:</label><br>
+            <select name="priority" required="">
+                <option value="low">Низький</option>
+                <option value="medium">Середній</option>
+                <option value="high">Високий</option>
+            </select>
+        </div>
+        <div>
+            <label>Скриншот:</label><br>
+            <input type="file">
+        </div>
+        <div>
+            <label>Статус:</label><br>
+            <select name="status" required="">
+                <option value="new">Новий</option>
+                <option value="in-progress">В процесі</option>
+                <option value="resolved">Вирішено</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Надіслати</button>
+        </div>
+    </form>
+</body>
+
+</html>
